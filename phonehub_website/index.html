@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhoneHub - Smartphone Store</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-inner">
+        <a class="logo" href="#">Phone<span>Hub</span></a>
+        <nav>
+          <a class="active" href="#home">Trang Chủ</a>
+          <a href="#products">Điện Thoại</a>
+          <a href="#accessories">Phụ Kiện</a>
+          <a href="#sale">Khuyến Mãi</a>
+          <a href="#contact">Liên Hệ</a>
+        </nav>
+        <div class="nav-tools">
+          <button
+            id="themeToggle"
+            class="theme-toggle"
+            aria-label="Chuyển chế độ sáng tối"
+            title="Chuyển chế độ sáng tối"
+          >
+            ☾</button
+          ><button class="menu-btn" aria-label="Mở menu">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">SMARTPHONE STORE</p>
+          <h1>PhoneHub</h1>
+          <h2>Best Smartphone of 2026!</h2>
+          <p class="desc">
+            Khám phá những mẫu smartphone mới nhất với thiết kế hiện đại, hiệu
+            năng mạnh mẽ và mức giá hấp dẫn.
+          </p>
+          <div class="actions">
+            <a class="btn btn-outline" href="#products">ⓘ More Info</a>
+            <a class="btn btn-primary" href="#products">🛒 Shop</a>
+          </div>
+        </div>
+
+        <div class="hero-phone" aria-label="Hình minh họa điện thoại">
+          <div class="phone phone-back">
+            <div class="camera"><i></i><i></i><i></i></div>
+            <div class="apple"></div>
+          </div>
+          <div class="phone phone-front">
+            <div class="screen">
+              <div class="notch"></div>
+              <div class="screen-glow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="wave"></div>
+      </section>
+
+      <section class="features">
+        <div>
+          <span>🚚</span><strong>Miễn phí vận chuyển</strong
+          ><small>Đơn từ 1.000.000đ</small>
+        </div>
+        <div>
+          <span>🛡️</span><strong>Bảo hành chính hãng</strong
+          ><small>An tâm mua sắm</small>
+        </div>
+        <div>
+          <span>💳</span><strong>Thanh toán linh hoạt</strong
+          ><small>COD & chuyển khoản</small>
+        </div>
+        <div>
+          <span>⚡</span><strong>Giao hàng nhanh</strong
+          ><small>Nội thành 2–4 giờ</small>
+        </div>
+      </section>
+
+      <section id="products" class="products section">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">SẢN PHẨM NỔI BẬT</p>
+            <h2>Điện thoại mới nhất</h2>
+          </div>
+          <a href="#">Xem tất cả →</a>
+        </div>
+
+        <div class="product-grid">
+          <article class="card">
+            <span class="badge">HOT</span>
+            <div class="product-img">
+              <img
+                src="./images/iphone-17-pro-max-1tb-xanh-duong-thumb.webp"
+                alt="iPhone 17 Pro Max"
+              />
+            </div>
+            <div class="card-body">
+              <h3>iPhone 17 Pro Max</h3>
+              <p class="spec">256GB · Titan · 5G</p>
+              <div class="price">32.990.000đ <del>34.990.000đ</del></div>
+              <div class="rating">★★★★★ <span>(128)</span></div>
+              <button class="cart" onclick="addToCart('iPhone 17 Pro Max')">
+                🛒 Thêm vào giỏ
+              </button>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="badge sale">-10%</span>
+            <div class="product-img">
+              <img
+                src="./images/iphone-17-pro-max-cam-thumb.webp"
+                alt="iPhone 17 Pro Max"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Iphone 17 Pro Max</h3>
+              <p class="spec">256GB · Phantom Blue · 5G</p>
+              <div class="price">28.990.000đ <del>32.490.000đ</del></div>
+              <div class="rating">★★★★★ <span>(95)</span></div>
+              <button class="cart" onclick="addToCart('Samsung Galaxy S25')">
+                🛒 Thêm vào giỏ
+              </button>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="badge sale">-8%</span>
+            <div class="product-img">
+              <img
+                src="./images/iphone-18-pro-do-thumb.webp"
+                alt="iPhone 17 Pro Max"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Iphone 18 Pro Max</h3>
+              <p class="spec">256GB · Bronze · 5G</p>
+              <div class="price">38.990.000đ <del>40.490.000đ</del></div>
+              <div class="rating">★★★★★ <span>(72)</span></div>
+              <button class="cart" onclick="addToCart('Xiaomi 15T')">
+                🛒 Thêm vào giỏ
+              </button>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="badge new">MỚI</span>
+            <div class="product-img">
+              <img
+                src="./images/iphone-duo-white-thumb (1).webp"
+                alt="iPhone 17 Pro Max"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Iphone Duo</h3>
+              <p class="spec">512GB · Purple · AMOLED</p>
+              <div class="price">64.990.000đ</div>
+              <div class="rating">★★★★★ <span>(61)</span></div>
+              <button class="cart" onclick="addToCart('OPPO Find X9')">
+                🛒 Thêm vào giỏ
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="accessories" class="brands section">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">THƯƠNG HIỆU</p>
+            <h2>Mua theo thương hiệu</h2>
+          </div>
+        </div>
+        <div class="brand-grid">
+          <div><b>Apple</b></div>
+          <div>SamSung</div>
+          <div>Xiaomi</div>
+          <div>OPPO</div>
+          <div>Vivo</div>
+          <div>Huawei</div>
+        </div>
+      </section>
+
+      <section id="sale" class="promo">
+        <div>
+          <p class="eyebrow">ƯU ĐÃI HÔM NAY</p>
+          <h2>Giảm đến 30% cho phụ kiện</h2>
+          <p>Ốp lưng, tai nghe, sạc nhanh và nhiều phụ kiện chính hãng.</p>
+        </div>
+        <a class="btn btn-primary" href="#contact">Mua ngay →</a>
+      </section>
+
+      <section id="contact" class="contact section">
+        <div>
+          <p class="eyebrow">LIÊN HỆ</p>
+          <h2>PhoneHub luôn sẵn sàng hỗ trợ</h2>
+          <p>Hotline: 1900 010182 · Email: support@phonehub.vn</p>
+        </div>
+        <form onsubmit="contactForm(event)">
+          <input id="email" type="email" placeholder="Email của bạn" required />
+          <button class="btn btn-primary" type="submit">
+            Đăng ký nhận tin
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <strong>Phone<span>Hub</span></strong>
+        <p>© 2026 PhoneHub. Thiết kế website bán điện thoại.</p>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast"></div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
